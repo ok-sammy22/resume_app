@@ -9,7 +9,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   void _openfacebook() async {
     var url = "https://www.facebook.com/iyanujesu.okunola.5";
-    if (await canLaunch(url)) {
+    if (await canLaunch(url)
+    ) {
       await launch(url, universalLinksOnly: true);
     } else {
       print('Error');
